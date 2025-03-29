@@ -43,7 +43,11 @@
 }
 
 input[type="file"] {
-  margin-top: 10px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .edit-user-page label {
