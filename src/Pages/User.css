@@ -1,0 +1,241 @@
+/* ✅ Global Styles */
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ✅ Page Title */
+.user-page h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ✅ User List Container */
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* ✅ User Card */
+.user-detail {
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-detail:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ User Name */
+.user-detail h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ✅ User Info */
+.user-detail p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ✅ User Avatar */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #ccc;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ✅ Buttons */
+.curd-btn {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-edit,
+.btn-delete {
+  background-color: white;
+  color: black;
+  border: solid 1px #000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-edit:hover {
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+}
+
+/* ✅ Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.pagination li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+  border: solid 1px #000;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background-color: black;
+  color: white;
+}
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .user-container {
+    width: 90%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .user-detail {
+    width: 45%;
+    height: auto;
+  }
+  .search-input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-detail {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Ensures centering */
+  }
+
+  .curd-btn {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-detail {
+    width: 95%;
+    padding: 15px;
+    margin: 0 auto; /* Ensures centering */
+  }
+
+  .user-page h1 {
+    font-size: 24px;
+  }
+
+  .pagination {
+    gap: 5px;
+  }
+
+  .pagination a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
