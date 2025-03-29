@@ -39,7 +39,7 @@ This is a **React (Vite)** application for managing users. It fetches user data 
    ```
 3. Install dependencies:
    ```sh
-   npm install
+   npm install Axios React Router SweetAlert2 React Paginate
    ```
 4. Run the development server:
    ```sh
