@@ -1,12 +1,70 @@
-# React + Vite
+# User Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React (Vite)** application for managing users. It fetches user data from the Reqres API and provides CRUD (Create, Read, Update, Delete) operations with pagination.
 
-Currently, two official plugins are available:
+## 🌍 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Hosted on Netlify:** [Your Netlify Link Here]
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fetch user data from API.
+- Display user list with pagination.
+- Edit user details.
+- Delete user with confirmation.
+- Responsive design.
+
+## 🔑 Login Credentials
+
+**Use the following credentials to log in:**
+
+- **Username:** `eve.holt@reqres.in`
+- **Password:** `cityslicka`
+
+## 🛠 Tech Stack
+
+- **Frontend:** React (Vite), CSS
+- **Packages Used:** Axios, React Router, SweetAlert2, React Paginate
+- **Deployment:** Netlify
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo-link.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd your-project-folder
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+
+## 🚀 Deploying to Netlify
+
+1. Build the project:
+   ```sh
+   npm run build
+   ```
+2. Deploy using Netlify CLI:
+   ```sh
+   netlify deploy --prod --dir=dist
+   ```
+
+## 📷 Screenshots
+
+(Add screenshots of your app here)
+
+## 🤝 Contributing
+
+Feel free to submit issues or pull requests for improvements.
+
+## 📜 License
+
+MIT License
