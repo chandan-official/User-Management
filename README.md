@@ -4,7 +4,7 @@ This is a **React (Vite)** application for managing users. It fetches user data 
 
 ## 🌍 Live Demo
 
-**Hosted on Netlify:** [Your Netlify Link Here]
+**Hosted on Netlify:** https://user-management-curd.netlify.app/
 
 ## 🚀 Features
 
